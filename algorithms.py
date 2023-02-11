@@ -1,2 +1,5 @@
 def search(arr, x):
-    return x in arr
+    for i, v in enumerate(arr):
+        if v == x:
+            return i
+    return -1
